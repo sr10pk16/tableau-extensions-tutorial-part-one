@@ -1,11 +1,13 @@
 'use strict';
  
 (function () {
-  document.write("Hello");
   $(document).ready(function () {
     // Initialises Tableau Data Extension
+
+    document.write("Hello");
     tableau.extensions.initializeAsync().then(function () {
-        refresh();
+      document.write("Hi");
+      refresh();
     }, function () { console.log('Error while Initializing: ' + err.toString()); });
   });
  
