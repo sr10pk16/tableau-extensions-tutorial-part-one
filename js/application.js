@@ -2,8 +2,10 @@
  
 (function () {
   $(document).ready(function () {
+
     // Initialises Tableau Data Extension
     tableau.extensions.initializeAsync().then(function () {
+        document.writeln("Prashant");
         refresh();
     }, function () { console.log('Error while Initializing: ' + err.toString()); });
   });
