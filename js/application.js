@@ -12,7 +12,7 @@
  
   function refresh() {
     // Gets a list of the worksheets and adds them to the web page.
-    $("#worksheets").text("");
+    $("#worksheets").text("Hasdfasdfs");
     const workSheets = tableau.extensions.dashboardContent.dashboard.worksheets;
     workSheets.forEach(function (worksheet) {
         $("#worksheets").append(`<button class='btn btn-secondary btn-block'>Hi</button>`);
