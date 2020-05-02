@@ -6,7 +6,6 @@
 
     document.write("Hello");
     tableau.extensions.initializeAsync().then(function () {
-      document.write("Hi");
       refresh();
     }, function () { console.log('Error while Initializing: ' + err.toString()); });
   });
@@ -16,7 +15,7 @@
     $("#worksheets").text("");
     const workSheets = tableau.extensions.dashboardContent.dashboard.worksheets;
     workSheets.forEach(function (worksheet) {
-        $("#worksheets").append(`<button class='btn btn-secondary btn-block'>${worksheet.name}</button>`);
+        $("#worksheets").append(`<button class='btn btn-secondary btn-block'>Hi</button>`);
     });
   }
 })();
