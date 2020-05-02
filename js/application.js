@@ -1,7 +1,7 @@
 'use strict';
  
 (function () {
-  document.write("Hi");
+  document.write("Hello");
   $(document).ready(function () {
     // Initialises Tableau Data Extension
     tableau.extensions.initializeAsync().then(function () {
